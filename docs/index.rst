@@ -10,6 +10,10 @@ BCO-DMO Data Managers Cookbook
    :maxdepth: 2
    :caption: Contents:
 
+   System-organisation
+   Administrative
+   Info-Submissions 
+
 
 
 Indices and tables

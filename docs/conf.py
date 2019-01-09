@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'BCODMO_Documentation'
-copyright = '2019, Karen Soenen'
+project = 'CoreTrustSeal Documentation'
+copyright = '2019, BCO-DMO'
 author = 'Karen Soenen'
 
 # The short X.Y version
@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BCODMO_Documentationdoc'
+htmlhelp_basename = 'Documentation Help'
 
 
 # -- Options for LaTeX output ------------------------------------------------

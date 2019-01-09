@@ -1,0 +1,177 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Implementing Read the docs &#8212; BCODMO_Documentation  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="implementing-read-the-docs">
+<h1>Implementing Read the docs<a class="headerlink" href="#implementing-read-the-docs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html">Getting started with sphinx</a></li>
+<li><a class="reference external" href="https://www.youtube.com/watch?v=hM4I58TA72g&amp;t=2665s">General tutorial</a></li>
+<li><a class="reference external" href="https://sphinx-tutorial.readthedocs.io/">Read the docs tutorial</a> - Good!</li>
+</ul>
+</div>
+<div class="section" id="preparation-installing-environments">
+<h2>Preparation: Installing environments<a class="headerlink" href="#preparation-installing-environments" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=O5-zaf2Kcus">Tutorial</a>:</p>
+<ul class="simple">
+<li>Anaconda: library that contains both python and packages (like sphinx)</li>
+<li>Git: command line tool for version control</li>
+<li>MS Visual Studio Code: a code Editor</li>
+<li>Check if installs is ok:</li>
+<li>Open command prompt and type:<ul>
+<li>conda –version</li>
+<li>git –version</li>
+</ul>
+</li>
+</ul>
+<p>if you get “git is not a recognised command”, the programs have not been installed properly.</p>
+<p>add both conda and python to your path: <a class="reference external" href="https://www.datacamp.com/community/tutorials/installing-anaconda-windows">https://www.datacamp.com/community/tutorials/installing-anaconda-windows</a></p>
+<p>Test set-up for git, bash and anaconda:
+<a class="reference external" href="https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-git-bash-anaconda/">https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-git-bash-anaconda/</a>
+Search for and open the Git Bash program. In this Terminal window, type bash and hit enter. If you do not get a message back, then Bash is available for use.</p>
+<p>Next, type git and hit enter. If you see a list of commands that you can execute, then Git has been installed correctly.</p>
+<p>Next, type conda and hit enter. Again, if you see a list of commands that you can execute, then Anaconda Python has been installed correctly.</p>
+<p>Close the Terminal by typing exit.</p>
+<p>Install anaconda for <strong>linux subsystem windows</strong>:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://medium.com/hugo-ferreiras-blog/using-windows-subsystem-for-linux-for-data-science-9a8e68d7610c">https://medium.com/hugo-ferreiras-blog/using-windows-subsystem-for-linux-for-data-science-9a8e68d7610c</a></li>
+<li><a class="reference external" href="https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da">https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da</a></li>
+</ul>
+<p>local Windows hard drives are accessible at the following paths in Bash:<span class="raw-html-m2r"><br></span>
+cd /mnt/e/username/folder1/folder2</p>
+<div class="section" id="using-git-with-vs-code">
+<h3>Using Git with VS Code<a class="headerlink" href="#using-git-with-vs-code" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=9cMWR-EGFuY&amp;t=19s">Tutorial</a><span class="raw-html-m2r"><br></span>
+Copy URl of Github repository: Open using ctrl+shf+p
+git: clone</p>
+<p>Set up Visual Studio Code as python IDE:
+On Windows, make sure the location of your Python interpreter is included in your PATH environment variable. You can check this by running path at the command prompt. If the Python interpreter’s folder isn’t included, open Windows Settings, search for “environment”, select Edit environment variables for your account, then edit the Path variable to include that folder.
+Open Anaconda prompt
+Type where python</p>
+</div>
+</div>
+<div class="section" id="read-the-docs-general-workflow">
+<h2>Read The Docs: General workflow<a class="headerlink" href="#read-the-docs-general-workflow" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="github-repository-structure">
+<h3>Github Repository Structure<a class="headerlink" href="#github-repository-structure" title="Permalink to this headline">¶</a></h3>
+<p>ReadTheDocs (repo)</p>
+<blockquote>
+<div><p><a href="#id2"><span class="problematic" id="id3">|</span></a>-Readme.md<span class="raw-html-m2r"><br></span>
+<a href="#id4"><span class="problematic" id="id5">|</span></a>-docs</p>
+<blockquote>
+<div><a href="#id6"><span class="problematic" id="id7">|</span></a>- <strong>index.rst</strong> : toctree (table of contents), index file fort the documentation<span class="raw-html-m2r"><br></span>
+<a href="#id8"><span class="problematic" id="id9">|</span></a>- conf.py : Customisation of Sphinks<span class="raw-html-m2r"><br></span>
+<a href="#id10"><span class="problematic" id="id11">|</span></a>- <em>Makefile</em> : Interface local development, do not touch<span class="raw-html-m2r"><br></span>
+<a href="#id12"><span class="problematic" id="id13">|</span></a>- <em>make.bat</em> : Interface local development, do not touch<span class="raw-html-m2r"><br></span>
+<a href="#id14"><span class="problematic" id="id15">|</span></a>- _build : output files go in here<span class="raw-html-m2r"><br></span>
+<a href="#id16"><span class="problematic" id="id17">|</span></a>- _static : include statice files like images<span class="raw-html-m2r"><br></span>
+<a href="#id18"><span class="problematic" id="id19">|</span></a>- _templates : Override Sphinx templates to customise look and feel<span class="raw-html-m2r"><br></span>
+<a href="#id20"><span class="problematic" id="id21">|</span></a>- <strong>index.rst</strong>  : Own documentation<span class="raw-html-m2r"><br></span>
+<a href="#id22"><span class="problematic" id="id23">|</span></a>- <strong>support.rst</strong>  : Own documentation<span class="raw-html-m2r"><br></span>
+<a href="#id24"><span class="problematic" id="id25">|</span></a>- <strong>something_else.rst</strong>  : Own documentation</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="what-files-to-we-want-to-put-in-there">
+<h3>What files to we want to put in there?<a class="headerlink" href="#what-files-to-we-want-to-put-in-there" title="Permalink to this headline">¶</a></h3>
+<p>Check CoreTrustSeal documentation</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BCODMO_Documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Karen Soenen.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/Administrative_Policy/DOIs.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,6 +1,6 @@
 .. This is a general document to describe something
 
-Administrative
+the start of the BCO-DMO data manager handbook
 ================================================
 
 

@@ -1,10 +1,14 @@
 .. This is a general document to describe something
 
-Administrative
+Administrative - main title in this document
 ================================================
 
+This is an administrative document
 
-I am a chapter about tables, but can also be something else
-============================================================
+I am a section
+------------------------------
+This is what is being describe in this section
 
-There should be a table in here somewhere
+I am a subsection
+~~~~~~~~~~~~~~~~~
+A description about a subsection!

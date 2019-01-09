@@ -1,6 +1,6 @@
 .. This is a general document to describe something
 
-Desciption of the system organisation
+System organisation
 ================================================
 
 

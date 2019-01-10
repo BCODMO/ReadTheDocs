@@ -9,6 +9,6 @@ I am a section
 ------------------------------
 This is what is being describe in this section
 
-I am a subsection
+Different title
 ~~~~~~~~~~~~~~~~~
-A description about a subsection!
+A description about a subsectio

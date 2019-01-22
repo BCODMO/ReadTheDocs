@@ -7,4 +7,4 @@ Create a Lucid chart with how the infrastructure of BCO-DMO looks like: data sto
 
 Database design/ connections in OSPREY
 ====================
-
+Technology things

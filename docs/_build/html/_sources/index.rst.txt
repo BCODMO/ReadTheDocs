@@ -10,9 +10,11 @@ BCO-DMO Data Managers Cookbook
    :maxdepth: 2
    :caption: Contents:
 
-   System-organisation
-   Administrative
-   Info-Submissions
+   TOC_About
+   TOC_Access-Data
+   TOC_Contribute-Data
+   TOC_Data-Management
+   TOC_Technology
 
 
 

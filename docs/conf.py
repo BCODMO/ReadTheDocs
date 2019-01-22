@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'CoreTrustSeal Documentation'
+project = 'BCO-DMO External info'
 copyright = '2019, BCO-DMO'
 author = 'Karen Soenen'
 

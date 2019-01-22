@@ -31,7 +31,7 @@ Metadata
 --------
 jow
 
-Internal SOP`s
+Internal SOPs
 ==============
 Info Submissions
 -----------------

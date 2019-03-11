@@ -15,21 +15,25 @@ BCO-DMO Data Managers Cookbook
 .. toctree::
    :maxdepth: 2
    :caption: Access Data
+
    TOC_Access-Data
 
 .. toctree::
    :maxdepth: 2
    :caption: Contribute Data
+
    TOC_Contribute-Data
 
 .. toctree::
    :maxdepth: 2
    :caption: Good Data Management
+
    TOC_Data-Management
 
 .. toctree::
    :maxdepth: 2
    :caption: Technology
+   
    TOC_Technology
 
 
